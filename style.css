@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6fc3df, #005aa7);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: yellow;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Container */
+.main-container {
+    padding: 30px;
+}
+
+/* PetVision Title */
+.title {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.bold {
+    font-weight: bold;
+    color: white;
+}
+
+/* Upload Buttons */
+.upload-section {
+    margin-top: 20px;
+}
+
+.upload-btn {
+    background-color: #ffeb99;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.upload-btn input {
+    display: none;
+}
+
+#openCameraBtn {
+    background-color: #ffeb99;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Camera Section */
+.camera-container {
+    display: none;
+    position: relative;
+    margin-top: 20px;
+}
+
+#camera {
+    width: 300px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#captureBtn, #closeCameraBtn {
+    display: block;
+    margin: 10px auto;
+    background-color: #ffeb99;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Image Preview */
+.image-preview {
+    margin-top: 20px;
+}
+
+.image-preview img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+    border: 3px solid white;
+}
+
+/* Predict Button */
+#predictBtn {
+    background-color: #005aa7;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 7px;
+    margin-top: 30px;
+}
+
+#processing {
+    display: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    margin-top: 18px;
+}
+
+/* Predictions Section */
+.predictions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.prediction-box {
+    margin: 0 25px;
+    text-align: center;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#circle1 {
+    background-color: orange;
+}
+
+#circle2 {
+    background-color: gray;
+}
+
+#circle3 {
+    background-color: darkred;
+}
+
+/* Advice Box */
+.advice-box {
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    width: 50%;
+    margin: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.advice-box h3 {
+    color: black;
+    font-size: 20px;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.important-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 5px black;
+}
