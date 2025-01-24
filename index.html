@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVision - AI Image Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Header with Logos -->
+    <div class="header">
+        <img src="{{ url_for('static', filename='images (1).jpeg') }}" alt="Logo" class="logo">
+        <h1>การใช้ AI ในการวิเคราะห์ความผิดปกติของดวงตาสัตว์เลี้ยง (PetVision)</h1>
+        <img src="{{ url_for('static', filename='IMG_8021.jpg') }}" alt="Logo" class="logo">
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <h1 class="title"><span class="italic">Pet</span><span class="bold">Vision</span></h1>
+
+        <!-- Upload & Camera Buttons -->
+        <div class="upload-section">
+            <input type="file" id="fileInput">
+            <button id="openCameraBtn">Open Camera</button>
+        </div>
+
+        <!-- Camera Section -->
+        <div class="camera-container" id="cameraContainer">
+            <video id="camera" autoplay></video>
+            <button id="captureBtn">Capture</button>
+            <button id="closeCameraBtn">Close Camera</button>
+        </div>
+
+        <!-- Image Preview -->
+        <div class="image-preview">
+            <img id="uploadedImage" src="" alt="Uploaded Image">
+        </div>
+
+        <!-- Predict Button -->
+        <button id="predictBtn">Upload & Predict</button>
+        <p id="processing">🔄 Processing...</p>
+
+        <!-- Predictions -->
+        <div class="predictions">
+            <div class="prediction-box">
+                <div id="circle1" class="circle">1</div>
+                <p id="prediction1">Prediction 1</p>
+            </div>
+            <div class="prediction-box">
+                <div id="circle2" class="circle">2</div>
+                <p id="prediction2">Prediction 2</p>
+            </div>
+            <div class="prediction-box">
+                <div id="circle3" class="circle">3</div>
+                <p id="prediction3">Prediction 3</p>
+            </div>
+        </div>
+
+        <!-- Advice Section -->
+        <div class="advice-box" id="adviceBox">
+            <h3>คำแนะนำ</h3>
+            <p id="adviceText"></p>
+        </div>
+    </div>
+
+    <!-- Significant Warning -->
+    <div class="footer">
+        <h2 class="important-text">❗หากเกิดข้อสงสัย กรุณาพบสัตวแพทย์❗</h2>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
